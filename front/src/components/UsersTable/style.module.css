@@ -1,0 +1,38 @@
+.main {
+   box-shadow: 0px 5px 15px 4px rgba(0, 0, 0, 0.2);
+   width: 500px;
+   max-width: 100%;
+   border-radius: 15px;
+   overflow: hidden;
+   border: none;
+   background: rgba(255, 255, 255, 0.836);
+}
+
+.main thead {
+   text-align: center;
+   background-color: #aaaaaa5e;
+   border: none;
+
+}
+
+.main th {
+   padding: 1rem 2rem;
+   border: none;
+   text-transform: uppercase;
+}
+
+.main th:nth-child(1) {
+   border-top-left-radius: 15px;
+}
+
+.main th:nth-child(3) {
+   border-top-right-radius: 15px;
+}
+
+.main td {
+   padding: .3rem .6rem;
+}
+
+.main tr:nth-child(odd) {
+   background-color: rgb(243, 243, 243)
+}

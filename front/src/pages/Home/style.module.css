@@ -1,0 +1,17 @@
+.main {
+   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%), url(../../media/back.jpg);
+   background-size: cover;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+
+
+}
+
+.container {
+   width: 100%;
+   max-width: 1180px;
+   gap: 1rem;
+   padding: 1rem;
+   min-height: 100vh;
+   justify-content: space-between !important;
+}
