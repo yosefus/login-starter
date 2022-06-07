@@ -14,7 +14,7 @@ export default function Home() {
       [users, setUsers] = useState([]),
       [success, setSuccess] = useState()
 
-   console.log(users);
+   // console.log("all users",users);
 
    const getUsers = () => {
       axios.get(getUsersUrl)
@@ -33,8 +33,6 @@ export default function Home() {
             setTimeout(() => setSuccess(), 4000)
          })
          .catch(error => console.log("error \n", error.message || error))
-
-      e.target.reset()
    }
 
    useEffect(getUsers, [])

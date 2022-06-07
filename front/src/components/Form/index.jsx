@@ -7,7 +7,7 @@ export default function Form({ handleSubmit, success }) {
       initialState = { firstName: "", lastName: "", email: "", password: "" },
       [formData, setFormData] = useState(initialState)
 
-   console.log(formData);
+   // console.log(formData);
 
    const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value })
 
