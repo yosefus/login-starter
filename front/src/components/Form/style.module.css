@@ -30,9 +30,12 @@
    padding: .7rem 1.5rem;
    background-color: #262626;
    color: #fff;
-   transition: all ease-in-out.3s;
+   transition: all ease-in-out .2s;
    font-size: 1rem;
    letter-spacing: 1.1px;
+   text-transform: uppercase;
+   border-radius: 5px;
+   font-weight: 700;
 }
 
 .form p {
@@ -41,5 +44,6 @@
 }
 
 .form button[type=submit]:hover {
-   transform: scale(0.9);
+   transform: scale(0.95);
+
 }

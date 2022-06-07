@@ -31,8 +31,21 @@
 
 .main td {
    padding: .3rem .6rem;
+   max-width: 150px;
+   overflow: hidden;
 }
 
 .main tr:nth-child(odd) {
    background-color: rgb(243, 243, 243)
+}
+
+@media screen and (max-width: 600px) {
+   .main th {
+      padding: .5rem;
+      font-size: .8rem;
+   }
+
+   .main td {
+      padding: .3rem .4rem;
+   }
 }
