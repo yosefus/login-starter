@@ -35,7 +35,7 @@
    overflow: hidden;
 }
 
-.main tr:nth-child(odd) {
+.main tr:nth-child(even) {
    background-color: rgb(243, 243, 243)
 }
 

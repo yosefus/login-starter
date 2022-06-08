@@ -25,7 +25,7 @@ export default function Form({ handleSubmit, success }) {
          <input onChange={handleChange} value={formData.lastName} required type="text" name="lastName" placeholder='last name...' />
          <input onChange={handleChange} value={formData.email} required type="email" name="email" placeholder='email...' />
          <input onChange={handleChange} value={formData.password} required type="password" name="password" placeholder='password...' />
-         {success && <p>new user added successfully</p>}
+         <p className={!success ? "slide-out-right" : 'slide-in-left'}>new user added successfully</p>
          <button type='submit'>Create user</button>
       </form>
    )
