@@ -2,7 +2,6 @@ import React from 'react'
 import styles from "./style.module.css"
 import Form from '../../components/Form'
 import UsersTable from '../../components/UsersTable'
-import axios from "axios"
 import { useState } from 'react'
 import { useEffect } from 'react'
 
@@ -17,22 +16,12 @@ export default function Home() {
    // console.log("all users",users);
 
    const getUsers = () => {
-      axios.get(getUsersUrl)
-         .then(({ data }) => setUsers(data))
-         .catch(error => console.log("error \n", error.message || error))
+
    }
 
    const register = async (e, newUser) => {
       e.preventDefault()
 
-      axios.post(registerUrl, newUser)
-         .then(({ data }) => {
-            console.log(data)
-            getUsers()
-            setSuccess(true)
-            setTimeout(() => setSuccess(), 4000)
-         })
-         .catch(error => console.log("error \n", error.message || error))
    }
 
    useEffect(getUsers, [])
